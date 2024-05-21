@@ -6,7 +6,6 @@ import {
   SocialIcon,
   SocialWrapper,
   SocialWrapperLeft,
-  SocialWrapperRight,
 } from './footer.style'
 import {Container, FlexWrapper, GridWrapper} from '../../Styles/commonStyles'
 import {
@@ -19,11 +18,10 @@ import {
 
 import {Link} from 'react-router-dom'
 import {GoArrowUpRight} from 'react-icons/go'
-import {IconType} from 'react-icons'
 
 import Wordpress from '../../Assets/wordpress.png'
 
-interface Link {
+interface CustomLink {
   id: number
   linkName: string
   hasExternalLink: boolean
@@ -63,7 +61,7 @@ const socialLinks: SocialLink[] = [
   },
 ]
 
-const links: Link[] = [
+const links: CustomLink[] = [
   {id: 1, linkName: 'About', hasExternalLink: false},
   {id: 2, linkName: 'Showcase', hasExternalLink: false},
   {id: 3, linkName: 'News', hasExternalLink: false},
