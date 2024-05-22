@@ -1,5 +1,15 @@
 import {FC, ReactNode} from 'react'
-import './footer.style'
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaYoutube,
+} from 'react-icons/fa'
+import {Link} from 'react-router-dom'
+import {GoArrowUpRight} from 'react-icons/go'
+
+// Styles
 import {
   FooterExternalLink,
   FooterWrapper,
@@ -8,19 +18,13 @@ import {
   SocialWrapperLeft,
 } from './footer.style'
 import {Container, FlexWrapper, GridWrapper} from '../../Styles/commonStyles'
-import {
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-  FaLinkedin,
-  FaYoutube,
-} from 'react-icons/fa'
 
-import {Link} from 'react-router-dom'
-import {GoArrowUpRight} from 'react-icons/go'
-
+// Assets
 import Wordpress from '../../Assets/wordpress.png'
 
+
+
+// Types
 interface CustomLink {
   id: number
   linkName: string

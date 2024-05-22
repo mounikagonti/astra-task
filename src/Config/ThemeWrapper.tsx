@@ -6,15 +6,14 @@ import {AppDispatch, RootState} from '../Redux/store'
 
 // Configs
 import { router } from './routerConfig'
-import {darkTheme, lightTheme} from '../Styles/theme'
 
 // Redux slice for theme
 import {fetchInitialTheme} from '../Redux/Slices/themeSlice'
 
 // Styles
 import {GlobalStyle} from '../Styles/globalStyles'
+import {darkTheme, lightTheme} from '../Styles/theme'
 
-// Components
 
 const ThemeWrapper: FC = () => {
   const dispatch: AppDispatch = useDispatch()

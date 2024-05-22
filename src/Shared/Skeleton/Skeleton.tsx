@@ -1,5 +1,7 @@
 import React from 'react'
 import styled, {keyframes} from 'styled-components'
+
+// Styles
 import {Container} from '../../Styles/commonStyles'
 
 const Skeleton: React.FC = () => {

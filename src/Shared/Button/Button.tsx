@@ -1,6 +1,7 @@
 import {FC, memo} from 'react'
 import {ButtonWrapper} from './Button.style'
 
+// Types
 interface ButtonProps {
   onClick?: () => void
   disabled?: boolean

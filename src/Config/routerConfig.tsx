@@ -23,7 +23,9 @@ export const router = createBrowserRouter([
     path: '/',
     element: (
       <Layout>
-        <HomePage />
+        <Suspense fallback={<Skeleton />}>
+          <HomePage />
+        </Suspense>
       </Layout>
     ),
   },
